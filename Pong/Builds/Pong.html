@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript" src="https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
+		<script type="text/javascript">
+			var config = {width: 800, height: 600, params: {enableDebugging:"0" }};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+				u.initPlugin(jQuery("#unityPlayer")[0], "Pong.unity3d");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="unityPlayer">
+		</div>
+	</body>
+</html>
