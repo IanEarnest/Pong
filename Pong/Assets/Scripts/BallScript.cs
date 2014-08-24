@@ -6,11 +6,11 @@ public class BallScript : MonoBehaviour {
 	public static int playerScore = 0;
 	public static int enemyScore = 0;
 	
-	float ballSpeed = 20;
-	float ballStartSpeed;
-	float ballMaxSpeed = 50;
+	float ballSpeed = 2; //20
+	public static float ballStartSpeed = 2;
+	public static float ballMaxSpeed = 40; //50 - at 44 the ball flys out
 	float ballAngle = 10;
-	float ballIncrement = 10;
+	float ballIncrement = 2; //10
 	bool ballGoingUp;
 	public Transform playerPaddle;
 	public Transform enemyPaddle;
@@ -28,7 +28,13 @@ public class BallScript : MonoBehaviour {
 		rigidbody.velocity = new Vector3(ballSpeed, ballAngle, 0);
 		ballOrigin = ball.transform.position;
 		ball.name = "Ball " + ballNum; // Otherwise (clone) is added to every instance on top of current name.
-		ballStartSpeed = ballSpeed;
+
+		// Ball is speeded up in the menu.
+		if (Application.loadedLevelName.Contains("Level Scene")) {
+			ballSpeed = ballStartSpeed;
+		} else {
+			ballSpeed = 40;
+		}
 	}
 
 	void Update(){
@@ -85,7 +91,7 @@ public class BallScript : MonoBehaviour {
 
 		// Variables to judge where ball hit on paddle.
 		float ballMiddle = transform.position.y - col.transform.position.y;
-		float paddleAboveMiddle = 0.7f; // Good amount from middle.
+		float paddleAboveMiddle = 0.3f; // Good amount from middle.
 		float paddleUnderMiddle = 0-paddleAboveMiddle;
 
 

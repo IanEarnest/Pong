@@ -13,9 +13,9 @@ public class MainGUIScript : MonoBehaviour {
 
 	bool main = true, options, about;
 
-	Rect menuRect = new Rect(Screen.width/2 - 50, Screen.height/2 - 73, 100, 146);
+	Rect menuRect = new Rect(Screen.width/2 - 50, Screen.height/2 - 73, 100, 121);
 	Rect optionsRect = new Rect(Screen.width/2 - 110, Screen.height/2 - 50, 220, 100);
-	Rect aboutRect = new Rect(Screen.width/2 - 100, Screen.height/2 - 35, 200, 71);
+	Rect aboutRect = new Rect(Screen.width/2 - 100, Screen.height/2 - 35, 200, 96);
 
 	void Start(){
 		// Set the difficultySlider so that the difficulty
@@ -34,6 +34,8 @@ public class MainGUIScript : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.skin = globalGUISkin;
+
+		optionsRect = new Rect(Screen.width/2 - 110, Screen.height/2 - 50, 220, 127);
 
 		// Main menu
 		if(main == true){
@@ -81,6 +83,11 @@ public class MainGUIScript : MonoBehaviour {
 					GUILayout.Box(""+scoreToWin, GUILayout.Width(40));
 					scoreToWin = (int)GUILayout.HorizontalSlider(scoreToWin, 1, 11, GUILayout.Width(90));
 				GUILayout.EndHorizontal();
+				GUILayout.BeginHorizontal();
+					GUILayout.Label("Ball speed: ", GUILayout.Width(80));
+					GUILayout.Box(""+BallScript.ballStartSpeed, GUILayout.Width(40));
+					BallScript.ballStartSpeed = (int)GUILayout.HorizontalSlider(BallScript.ballStartSpeed, 1, BallScript.ballMaxSpeed, GUILayout.Width(90));
+				GUILayout.EndHorizontal();
 				if(GUILayout.Button("Close")){
 					main = true;
 					options = false;
@@ -93,6 +100,7 @@ public class MainGUIScript : MonoBehaviour {
 			GUILayout.BeginArea(aboutRect);
 				GUILayout.Space (25f);
 				GUILayout.Label("Creator: IanEarnest");
+				GUILayout.Label("Version 0.1.2");
 				if(GUILayout.Button("Close")){
 					main = true;
 					about = false;

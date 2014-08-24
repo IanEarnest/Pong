@@ -8,7 +8,7 @@ public class ScoreGUIScript : MonoBehaviour {
 	int easyScore;
 
 	Rect menuRect = new Rect(Screen.width/2 - 50, Screen.height/2 - 100, 100, 76);
-	Rect scoresRect = new Rect(Screen.width/2 - 100, Screen.height/2, 200, 125);
+	Rect scoresRect = new Rect(Screen.width/2 - 100, Screen.height/2, 200, 146);
 
 	bool resetConfirmButton;
 	GUIStyle numbersStyle;
@@ -24,7 +24,6 @@ public class ScoreGUIScript : MonoBehaviour {
 		numbersStyle = new GUIStyle(GUI.skin.GetStyle("Label"));
 		numbersStyle.alignment = TextAnchor.UpperRight;
 
-		scoresRect = new Rect(Screen.width/2 - 100, Screen.height/2, 200, 155);
 		// Menu
 		GUI.Box(menuRect, "Menu");
 		GUILayout.BeginArea(menuRect);

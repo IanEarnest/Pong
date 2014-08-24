@@ -11,7 +11,7 @@ public class GameGUIScript : MonoBehaviour {
 
 	//private string[] strings = {"Main Menu", "Replay", "Scores" ,"Quit"};
 
-	Rect menuRect = new Rect(Screen.width/2 - 50, Screen.height/2 - 73, 120, 146);
+	Rect menuRect = new Rect(Screen.width/2 - 50, Screen.height/2 - 73, 120, 96);
 
 	void Start(){
 	}
