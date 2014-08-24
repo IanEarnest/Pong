@@ -1,4 +1,4 @@
 Pong
 ====
 
-Made with Unity 3d.
+Made with Unity.
