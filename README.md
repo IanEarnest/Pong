@@ -2,7 +2,7 @@ Pong
 ====
 
 Made with Unity.
-
+Version 0.1.2
 
 To-do list
 ==========
@@ -19,14 +19,16 @@ To-do list
 	
 - &#x2611; Scoring
 	
-&#9744; Levels
+&#x2611; Levels
 
 - &#x2611; Main
 	
-- &#9744; Game
+- &#x2611; Game
 	
 - &#x2611; Scores
-	
+
+&#9744; Extras
+
 &#x2611; Publish web player
 
 &#x2611; Local high scores
@@ -39,9 +41,9 @@ To-do list
 
 &#9744; Additional game modes
 
-&#9744; Adjust gameplay/speeds
+&#x2611; Adjust gameplay/speeds
 
-&#9744; Design/colour system
+&#x2611; Design/colour system
 
 
 
