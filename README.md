@@ -30,21 +30,21 @@ To-do list
 
 &#9744; Extras
 
-&#x2611; Publish web player
+- &#x2611; Publish web player
 
-&#x2611; Local high scores
+- &#x2611; Local high scores
 
-&#9744; Global high scores
+- &#9744; Global high scores
 
-&#9744; Local multiplayer
+- &#9744; Local multiplayer
 
-&#9744; Global multiplayer
+- &#9744; Global multiplayer
 
-&#9744; Additional game modes
+- &#9744; Additional game modes
 
-&#x2611; Adjust gameplay/speeds
+- &#x2611; Adjust gameplay/speeds
 
-&#x2611; Design/colour system
+- &#x2611; Design/colour system
 
 
 
