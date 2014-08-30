@@ -1,9 +1,21 @@
 Pong
 ====
 
-Made with Unity.
+Introduction
+------------
+
+A pong game made using Unity.
+
+Based on the classic pong game with high scores and customised game settings.
 
 Version 0.1.2
+
+
+Purpose
+-------
+
+To recreate the classic pong game.
+
 
 To-do list
 ==========
